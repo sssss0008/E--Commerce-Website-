@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | E-Commerce Website</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: black;
+      color: white;
+    }
+
+    /* Navigation Bar */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #222;
+      padding: 10px 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00ffcc;
+    }
+
+    /* Hero Section */
+    .hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #333, #555);
+      height: 80vh;
+      color: white;
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 4rem;
+      text-transform: uppercase;
+      margin: 0;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc, 0 0 30px rgba(0, 255, 255, 0.8);
+    }
+    .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+      color: #ccc;
+    }
+    .hero button {
+      background: #00ffcc;
+      color: black;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .hero button:hover {
+      background: #00997a;
+    }
+
+    /* Features Section */
+    .features {
+      padding: 40px 20px;
+      background: black;
+    }
+    .features h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: #00ffcc;
+      margin-bottom: 40px;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+    .features .feature-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      text-align: center;
+    }
+    .features .feature-item {
+      background: linear-gradient(135deg, #333, #555);
+      border-radius: 10px;
+      box-shadow: 0 10px 20px rgba(0, 255, 255, 0.5);
+      padding: 20px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .features .feature-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 255, 255, 0.8);
+    }
+    .features .feature-item img {
+      width: 80px;
+      margin-bottom: 10px;
+    }
+    .features .feature-item h3 {
+      font-size: 1.5rem;
+      color: #00ffcc;
+      margin-bottom: 10px;
+    }
+    .features .feature-item p {
+      color: #ccc;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">
+      <a href="#" style="color: white; font-size: 24px; font-weight: bold;">E-Shop</a>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div>
+      <h1>Welcome to E-Shop</h1>
+      <p>Your one-stop shop for all your needs.</p>
+      <button>Start Shopping</button>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <h2>Why Shop With Us?</h2>
+    <div class="feature-container">
+      <div class="feature-item">
+        <img src="https://via.placeholder.com/80" alt="Feature 1">
+        <h3>High Quality</h3>
+        <p>We provide the best products with guaranteed quality.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://via.placeholder.com/80" alt="Feature 2">
+        <h3>Affordable Prices</h3>
+        <p>Get the best deals at the lowest prices.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://via.placeholder.com/80" alt="Feature 3">
+        <h3>Fast Delivery</h3>
+        <p>Quick and reliable delivery right to your door.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://via.placeholder.com/80" alt="Feature 4">
+        <h3>Customer Support</h3>
+        <p>We’re here to help you 24/7 with any questions.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://via.placeholder.com/80" alt="Feature 5">
+        <h3>Wide Selection</h3>
+        <p>Choose from a variety of products to suit your needs.</p>
+      </div>
+      <div class="feature-item">
+        <img src="https://via.placeholder.com/80" alt="Feature 6">
+        <h3>Secure Payments</h3>
+        <p>Your safety is our priority with secure transactions.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 E-Shop. All rights reserved.</p>
+  </footer>
+</body>
+</html>
